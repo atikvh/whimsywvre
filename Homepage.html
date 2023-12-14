@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="NavStyling.css">
+        <style>
+            .MainImage > img{
+                display: block;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #firstP  {
+                font-size: large;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color: rgb(16, 1, 1);
+                text-align: center;
+                background-color: #fafefa;
+                margin:0;
+                padding: 5%;
+            }
+            #firstP > a{
+                font-size: 25px;
+                font-weight: bolder;
+                text-align: center;
+                color: burlywood;
+                text-decoration: none;
+            }
+            #firstP > a:hover{
+                color: powderblue;
+                text-decoration:underline;
+            }
+        </style>
+        <title>
+            WhimsyWare Co.
+        </title>
+    </head>
+    
+    <body>
+        <script src="Script.js"></script>
+        <header>
+            <table class="topBar">
+              <tr>
+                <td rowspan="3">
+                    <img class="logo" src="WhimsyWare.png" alt="CompanyLogo">
+                </td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td><a class="sideNav" href="Log_in.html">account<img src="Account_1.svg" alt="account" width="10%"></a></td>
+              </tr>
+              <tr>
+                <td><a class="sideNav" href="#">favourite<img src="Favourite_1.svg" alt="Favourite" width="10%"></a></td>
+              </tr>
+              <tr>
+                <td><a class="sideNav" href="#">cart<img src="Cart_1.svg" alt="cart" width="10%"></a></td>
+              </tr>
+            </table>
+        </header>
+        <nav class="mainnav">
+            <a href="Homepage.html"><b>HOME</b></a>
+            <a href="Productpage.html"><b>PRODUCT</b></a>
+            <a href="Contactpage.html"><b>CONTACT</b></a>
+            <a href="Aboutuspage.html"><b>ABOUT</b></a>
+            <input class="searchbox" type="text" placeholder="what are you looking for?">
+        </nav>
+        <div class="MainImage"> 
+            <img src="Mainpage1.png" alt="mainPage">
+        </div>
+        <div>
+            <p id="firstP">
+                Elevate your lifestyle with the relaunch of our best-seller,<br> 
+                <a href="Productpage.html">The <b><i>Gaia</i></b> collection.<br></a>
+                Immerse yourself in the artistry of sustainable delicateware,<br>
+                where every piece tells a unique story of craftsmanship and elegance.<br>
+            </p>
+        </div>
+        <div class="MainImage"> 
+            <img src="Mainpage2.png" alt="mainPage">
+        </div>
+        <footer id="mainFooter">
+            <div>
+                <div>
+                    The WhimsyWare Co.<br>
+                    <a href="mailto:help.whimsy@mail.com" style="text-decoration: none;color: white;">help.whimsy@mail.com</a> | +60 1136621120
+                </div>
+                <div id="menuFooter">
+                    <ul style="list-style-type: none;">
+                        <li>Footer menu:</li>
+                        &numsp;
+                        <li>Search</li>
+                        &numsp;
+                        <li>Location & hours</li>
+                        &numsp;
+                        <li>Delivery & Payment</li>
+                        &numsp;
+                        <li>Care & Warranty</li>
+                        &numsp;
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <small style="color:rgba(250, 235, 215, 0.671);">Copyright © 2023 Whimsyware Co. | 
+                <span id="datelastModified"></span><br>
+                <span> Created on: 14/12/2023 |</span>
+                <span id="dataCollectionDate"></span>
+            </small>
+        </footer>
+    </body>
+</html>

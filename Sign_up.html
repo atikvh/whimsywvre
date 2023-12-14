@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>New user</title>
+        <link rel="stylesheet" href="NavStyling.css">
+        <style>
+            #logo-position{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo{
+                width:13%;
+                margin-left: 0;
+                margin-right: 0;
+                padding-bottom: 0;
+            }
+            .mainnav{
+                background-color: #9b436f;
+            }
+            .mainnav > a {
+                color: #0a0a0a;
+            }
+            .mainnav > a:hover{
+                background-color: #9e9ee8;
+                color:rgb(254, 23, 23);
+            }
+            .mainnav > a:active{
+                background-color: #ddd;
+                color: white;
+            }
+            .Sign-up {
+                text-align:center;
+            }
+            .Sign-up > form > input{
+                width: 400px;
+                height: 40px;
+                background: transparent;
+                border: none;
+                border-radius: 0;
+            }
+            #CreateButton {
+                border: none;
+                width: 30%;
+                height: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin-top: 5%;
+                margin-bottom:5%;
+                transition: 0.5s ease-out;
+            }
+            #CreateButton:hover{
+                background-color:bisque;
+            }
+            #CreateButton:active {
+                background-color: maroon;
+                color: white;
+                font-weight:bolder;
+            }
+            #mainFooter{
+                background-color: #9b436f;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="Script.js"></script>
+        <div id="logo-position">
+            <img class="logo" src="WhimsyWare.png" alt="CompanyLogo">
+            <div id="extraNav" class="theextraNav">
+                <a href="Log_in.html" id="account">account</a>
+                <a href="#" id="favourite">favourite</a>
+                <a href="#" id="cart">cart (1)</a>
+            </div> 
+        </div>
+        <nav class="mainnav">
+            <a href="Homepage.html"><b>HOME</b></a>
+            <a href="Productpage.html"><b>PRODUCT</b></a>
+            <a href="Contactpage.html"><b>CONTACT</b></a>
+            <a href="Aboutuspage.html"><b>ABOUT</b></a>
+        </nav>
+        <h1 style="text-align: center; margin-bottom:0;color: purple;">Create Account</h1>
+        <p style="text-align: center; font-family:'Times New Roman', Times, serif; margin-top:0%;">Please fill in your information below.</p>
+        <div class="Sign-up">
+            <form method="post">
+                <input type="text" id="newFname" placeholder="First name (required)" required> <br>
+                <input type="text" id="newLname" placeholder="Last name (required)" required> <br>
+                <p style="color:#0a0a0a88; font-family: Arial, Helvetica, sans-serif; font-size: small; margin-bottom:0%;">Date of Birth:</p>
+                <br> <input type="date" id="newDOB" required> <br>
+                <input type="email" id="newEmail" placeholder="Your@email.com" required> <br>
+                <input type="password" id="newPass" placeholder="Password" required> <br>
+                <input type="password" id="confirmPass" placeholder="confirm Password" required> <br>
+                <button id="CreateButton" id="createAcc" onclick="validateSignUp()">Create Account</button>
+            </form>
+        </div>
+        <footer id="mainFooter">
+            <div>
+                <div>
+                    The WhimsyWare Co.<br>
+                    <a href="mailto:help.whimsy@mail.com" style="text-decoration: none;color: white;">help.whimsy@mail.com</a> | +60 1136621120
+                </div>
+                <div id="menuFooter">
+                    <ul style="list-style-type: none;">
+                        <li>Footer menu:</li>
+                        &numsp;
+                        <li>Search</li>
+                        &numsp;
+                        <li>Location & hours</li>
+                        &numsp;
+                        <li>Delivery & Payment</li>
+                        &numsp;
+                        <li>Care & Warranty</li>
+                        &numsp;
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <small style="color:rgba(250, 235, 215, 0.422);">Copyright © 2023 Whimsyware Co. |
+                <span id="datelastModified"></span><br>
+                <span> Created on: 14/12/2023 |</span>
+                <span id="dataCollectionDate"></span>
+            </small>
+        </footer>
+    </body>
+</html>

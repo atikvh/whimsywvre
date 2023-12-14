@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="NavStyling.css">
+        <style>
+            #logo-position{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+            .logo{
+                width:13%;
+                margin-left: 0;
+                margin-right: 0;
+                padding-bottom: 0;
+            }
+            .mainnav{
+                background-color: rgb(27, 100, 44);
+            }
+            .mainnav > a {
+                color: #f2f2f2;
+            }
+            .mainnav > a:hover{
+                background-color: rgb(130, 0, 0);
+                color:black;
+            }
+            .mainnav > a:active{
+                background-color: #ddd;
+                color: white;
+            }
+            #aboutdesc {
+                font-size: larger;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color: rgb(16, 1, 1);
+                text-align: center;
+                background-color: #fafefa;
+                margin-left:15%;
+                margin-right:15%;
+                padding: 5%;
+            }
+            #aboutdesc > a {
+                font-weight:bolder;
+                display: block;
+                margin-top: 100px;
+                margin-bottom: 0;
+            }
+            #STG{
+                display:flex;
+                flex-direction: column;
+                position:relative;
+                margin: 0 auto;
+                margin-bottom:0;
+                width: 30%;
+                align-items: center;
+            }
+            #mainFooter{
+                background-color: rgb(32, 62, 0);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="Script.js">
+        </script>
+        <div id="logo-position">
+            <img class="logo" src="WhimsyWare.png" alt="CompanyLogo">
+            <div id="extraNav" class="theextraNav">
+                <a href="Log_in.html" id="account">account</a>
+                <a href="#" id="favourite">favourite</a>
+                <a href="#" id="cart">cart (1)</a>
+            </div> 
+        </div>
+        <nav class="mainnav">
+            <a href="Homepage.html"><b>HOME</b></a>
+            <a href="Productpage.html"><b>PRODUCT</b></a>
+            <a href="Contactpage.html"><b>CONTACT</b></a>
+            <a href="Aboutuspage.html"><b>ABOUT</b></a>
+        </nav>
+        <h1 style="text-align: center; color: rgb(7, 74, 7);">About us</h1>
+        <p id="aboutdesc">
+            Welcome to WhimsyWare Co., where creativity meets compassion. At WhimsyWare, we take pride in
+            crafting exquisite stained glassware and a variety of other glasswares that not only enhance your
+            living space but also reflect our commitment to <b>environmental sustainability</b>. Our pieces are
+            meticulously designed to bring whimsical beauty into your surroundings while promoting
+            eco-friendly practices. What sets us apart is our dedication to making a positive impact beyond
+            artistry. We are proud to announce that <b>50% </b>of our profits go directly to supporting the people
+            of Gaza, demonstrating our <b>solidarity with Palestine </b>and our commitment to raising awareness to
+            halt the ongoing genocide. With WhimsyWare Co., your purchase not only adds a touch of elegance to
+            your home but also contributes to a cause that truly matters. Join us in spreading love, awareness,
+            and supporting those in need.<br>
+            To know more regarding the people of Gaza, please click the link below.<br>
+            There are endless factual articles regarding this genocide, please take the time to educate yourself and those around you!<br>
+            <a href="https://www.nrc.no/perspectives/2023/10-things-you-should-know-about-the-humanitarian-situation-in-gaza/">#STOPTHEGENOCIDE</a>
+        </p>
+        <img id="STG" src="STG.jpg">
+        <footer id="mainFooter">
+            <div>
+                <div>
+                    The WhimsyWare Co.<br>
+                    <a href="mailto:help.whimsy@mail.com" style="text-decoration: none;color: white;">help.whimsy@mail.com</a> | +60 1136621120
+                </div>
+                <div id="menuFooter">
+                    <ul style="list-style-type: none;">
+                        <li>Footer menu:</li>
+                        &numsp;
+                        <li>Search</li>
+                        &numsp;
+                        <li>Location & hours</li>
+                        &numsp;
+                        <li>Delivery & Payment</li>
+                        &numsp;
+                        <li>Care & Warranty</li>
+                        &numsp;
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <small style="color:rgba(250, 235, 215, 0.422);">Copyright © 2023 Whimsyware Co. | 
+                <span id="datelastModified"></span><br>
+                <span> Created on: 14/12/2023 |</span>
+                <span id="dataCollectionDate"></span>
+            </small>
+        </footer>
+    </body>
+</html>

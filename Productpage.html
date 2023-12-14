@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Shop
+        </title>
+        <link rel="stylesheet" href="NavStyling.css">
+        <style>
+            #logo-position{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo{
+                width:13%;
+                margin-left: 0;
+                margin-right: 0;
+                padding-bottom: 0;
+            }
+            .mainnav{
+                background-color: #912123;
+            }
+            .mainnav > a {
+                color: #f2f2f2;
+            }
+            .mainnav > a:hover{
+                background-color: #f2efc0;
+                color:black;
+            }
+            .mainnav > a:active{
+                background-color: #ddd;
+                color: white;
+            }
+            .searchbox {
+                height: 43px;
+                width: 100%;
+                background-color: beige;
+                font-size:medium;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-indent: 1%;
+                border-radius: 0;
+            }
+            .searchbox:hover {
+                background-color: white;
+            }
+            .prod-list{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-between;
+                margin-left:5%;
+                margin-right:5%;
+                margin-bottom:5%;
+            }
+            .prod-card > button{
+                border-radius: 10px;
+                width: 40%;
+                height: 5%;
+                background-color: #001059f4;
+                color: white;
+                margin-left: 5%;
+                margin-bottom:2%;
+                cursor:pointer;
+                transition: 0.5s;
+            }
+            .prod-card > button:hover{
+                padding-right: 25px;
+            }
+
+            .prod-card{
+                width: 300px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius:5px;
+                padding: 10px;
+                box-sizing:border-box;
+            }
+            #prodImg {
+                width: 280px;
+
+            }
+            #prodName {
+                font-weight: bolder;
+                font-style: italic;
+                font-size: 200%;
+                color:rgb(165, 74, 0);
+                margin: 0;
+            }
+            #prodDesc{
+                text-align: center;
+                margin-bottom: 20%;
+                margin-top:0;
+            }
+            #prodPrice{
+                color: rgba(0, 0, 0, 0.448);
+                font-weight: bold;
+                text-align: right;
+            }
+            .prodNav{
+                color: rgba(0, 0, 0, 0.529);
+            }
+            #mainFooter{
+                background-color: rgb(91, 17, 17);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="Script.js"></script>
+        <div id="logo-position">
+            <img class="logo" src="WhimsyWare.png" alt="CompanyLogo">
+            <div id="extraNav" class="theextraNav">
+                <a href="Log_in.html" id="account">account</a>
+                <a href="#" id="favourite">favourite</a>
+                <a href="#" id="cart">cart (1)</a>
+            </div> 
+        </div>
+        <nav class="mainnav">
+            <a href="Homepage.html"><b>HOME</b></a>
+            <a href="Productpage.html"><b>PRODUCT</b></a>
+            <a href="Contactpage.html"><b>CONTACT</b></a>
+            <a href="Aboutuspage.html"><b>ABOUT</b></a>
+            <input class="searchbox" type="text" placeholder="what are you looking for?">
+        </nav>
+        <h1 style="text-align: center; color: rgb(7, 74, 7);">The Gaia collection.</h1>
+        <div class="prodNav">
+            <button>Filter</button>
+            6 product(s)
+        </div>
+        <div class="prod-list">
+            <div class="prod-card">
+                <img id="prodImg" src="Product1.PNG" onmouseover="this.src='Product1.1.PNG'" onmouseout="this.src='Product1.PNG'">
+                <p id="prodName">Heracles high vase</p>
+                <p id="prodDesc">Beautiful structured handblown medium vase in hues of green, rich off-white petals and deep gold.</p>
+                <p id="prodPrice">$60.0</p>
+                <button>Favourite</button><button>Add to cart</button>
+            </div>
+            <div class="prod-card">
+                <img id="prodImg" src="Product2.PNG" onmouseover="this.src='Product2.1.PNG'" onmouseout="this.src='Product2.PNG'">
+                <p id="prodName">Hera wineglass</p>
+                <p id="prodDesc">Refreshing, intoxicating or a bit of both, these handblown drinking glasses add intrigue and style.</p>
+                <p id="prodPrice">$35.0</p>
+                <button>Favourite</button><button>Add to cart</button>
+            </div>
+            <div class="prod-card">
+                <img id="prodImg" src="Product5.PNG" onmouseover="this.src='Product5.1.PNG'" onmouseout="this.src='Product5.PNG'">
+                <p id="prodName">Arthemis teacup</p>
+                <p id="prodDesc">Refreshing, intoxicating or a bit of both, these handblown drinking glasses add intrigue and style.</p>
+                <p id="prodPrice">$25.0</p>
+                <button>Favourite</button><button>Add to cart</button>
+            </div>
+            <div class="prod-card">
+                <img id="prodImg" src="Product3.PNG" onmouseover="this.src='Product3.1.PNG'" onmouseout="this.src='Product3.PNG'">
+                <p id="prodName">Apollo glass</p>
+                <p id="prodDesc">Refreshing, intoxicating or a bit of both, these handblown drinking glasses add intrigue and style.</p>
+                <p id="prodPrice">$25.0</p>
+                <button>Favourite</button><button>Add to cart</button>
+            </div>
+            <div class="prod-card">
+                <img id="prodImg" src="Product4.PNG" onmouseover="this.src='Product4.1.PNG'" onmouseout="this.src='Product4.PNG'">
+                <p id="prodName">Psyche Teardrop</p>
+                <p id="prodDesc">Beautiful marbled handblown medium glass vase in two blue tones, sandy beige and rich mustard.</p>
+                <p id="prodPrice">$76.0</p>
+                <button>Favourite</button><button>Add to cart</button>
+            </div>
+            <div class="prod-card">
+                <img id="prodImg" src="Product6.PNG" onmouseover="this.src='Product6.1.PNG'" onmouseout="this.src='Product6.PNG'">
+                <p id="prodName">Persephone Triump</p>
+                <p id="prodDesc">Finely sized and versatile in shape, this piece is a long-stay staple of the studio's collection.</p>
+                <p id="prodPrice">$80.0</p>
+                <button>Favourite</button><button>Add to cart</button>
+            </div>
+        </div>
+        <footer id="mainFooter">
+            <div>
+                <div>
+                    The WhimsyWare Co.<br>
+                    <a href="mailto:help.whimsy@mail.com" style="text-decoration: none;color: white;">help.whimsy@mail.com</a> | +60 1136621120
+                </div>
+                <div id="menuFooter">
+                    <ul style="list-style-type: none;">
+                        <li>Footer menu:</li>
+                        &numsp;
+                        <li>Search</li>
+                        &numsp;
+                        <li>Location & hours</li>
+                        &numsp;
+                        <li>Delivery & Payment</li>
+                        &numsp;
+                        <li>Care & Warranty</li>
+                        &numsp;
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <small style="color:rgba(250, 235, 215, 0.422);">Copyright © 2023 Whimsyware Co. |
+                <span id="datelastModified"></span><br>
+                <span> Created on: 14/12/2023 |</span>
+                <span id="dataCollectionDate"></span>
+            </small>
+        </footer>
+    </body>
+</html>

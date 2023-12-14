@@ -1,0 +1,115 @@
+.topBar { 
+    table-layout: fixed;
+    border:none;
+    width: 100%;
+    height: 20%;
+    text-align: right;
+}
+.sideNav{
+    text-align: center;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition:0.3s;
+    font-weight: bolder;
+}
+.sideNav:hover{
+    font-style: italic;
+    color:rgb(234, 170, 59);
+}
+.sideNav > img:hover{
+    transform: rotateY(125deg);
+}
+.logo{
+    width:50%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    float:left;
+}
+.logo:hover{
+    transform:rotateY(180deg);
+    transition-duration: 1s;
+}
+.searchbox {
+    height: 43px;
+    width: 100%;
+    background-color: beige;
+    font-size:medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-indent: 1%;
+    border-radius: 0;
+}
+.searchbox:hover {
+    background-color: white;
+}
+.mainnav{
+    background-color: #212191;
+    overflow:hidden;
+}
+.mainnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: auto;
+}
+.mainnav a:hover{
+    background-color: #f2efc0;
+    color:rgb(187, 10, 10);
+    font-style: italic;
+}
+.mainnav a:active{
+    background-color: #ddd;
+    color: white;
+}
+#mainFooter{
+    background-color: rgb(187, 155, 136);
+    padding:20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#mainFooter > div{
+    display:flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+#menuFooter {
+    margin-left: auto;
+    margin-right: 10%;
+    text-align: left;
+}
+#extraNav > a {
+    position: absolute; 
+    left: -100px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 10%; 
+    text-decoration: none; 
+    font-size: 100%;
+    color: white; 
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+    font-family:monospace;
+  }
+#extraNav > a:hover {
+    left: 0;
+  }
+#account {
+    top: 5px;
+    background-color: #265087;
+}
+
+#favourite {
+    top: 53px;
+    background-color: #9e9162;
+}
+
+#cart {
+    top: 101px;
+    background-color: #614626; 
+}
